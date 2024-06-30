@@ -16,6 +16,10 @@
 		3C2646642C31248E00FB9C78 /* CollectionViewInUITableViewStoryBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2646632C31248E00FB9C78 /* CollectionViewInUITableViewStoryBoardTests.swift */; };
 		3C26466E2C31248E00FB9C78 /* CollectionViewInUITableViewStoryBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C26466D2C31248E00FB9C78 /* CollectionViewInUITableViewStoryBoardUITests.swift */; };
 		3C2646702C31248E00FB9C78 /* CollectionViewInUITableViewStoryBoardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C26466F2C31248E00FB9C78 /* CollectionViewInUITableViewStoryBoardUITestsLaunchTests.swift */; };
+		3C2646862C3125B200FB9C78 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C2646852C3125B200FB9C78 /* PhotoCollectionViewCell.xib */; };
+		3C2646872C3125B200FB9C78 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2646842C3125B200FB9C78 /* PhotoCollectionViewCell.swift */; };
+		3C26468C2C3125F900FB9C78 /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C26468B2C3125F900FB9C78 /* PhotoTableViewCell.xib */; };
+		3C26468D2C3125F900FB9C78 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C26468A2C3125F900FB9C78 /* PhotoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		3C2646692C31248E00FB9C78 /* CollectionViewInUITableViewStoryBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewInUITableViewStoryBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C26466D2C31248E00FB9C78 /* CollectionViewInUITableViewStoryBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewInUITableViewStoryBoardUITests.swift; sourceTree = "<group>"; };
 		3C26466F2C31248E00FB9C78 /* CollectionViewInUITableViewStoryBoardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewInUITableViewStoryBoardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3C2646842C3125B200FB9C78 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		3C2646852C3125B200FB9C78 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		3C26468A2C3125F900FB9C78 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		3C26468B2C3125F900FB9C78 /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,8 @@
 		3C26464B2C31248C00FB9C78 /* CollectionViewInUITableViewStoryBoard */ = {
 			isa = PBXGroup;
 			children = (
+				3C26467D2C31254D00FB9C78 /* TableCell */,
+				3C26467C2C31253400FB9C78 /* CollectionCell */,
 				3C26464C2C31248C00FB9C78 /* AppDelegate.swift */,
 				3C26464E2C31248C00FB9C78 /* SceneDelegate.swift */,
 				3C2646502C31248C00FB9C78 /* ViewController.swift */,
@@ -125,6 +135,24 @@
 				3C26466F2C31248E00FB9C78 /* CollectionViewInUITableViewStoryBoardUITestsLaunchTests.swift */,
 			);
 			path = CollectionViewInUITableViewStoryBoardUITests;
+			sourceTree = "<group>";
+		};
+		3C26467C2C31253400FB9C78 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				3C2646842C3125B200FB9C78 /* PhotoCollectionViewCell.swift */,
+				3C2646852C3125B200FB9C78 /* PhotoCollectionViewCell.xib */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		3C26467D2C31254D00FB9C78 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				3C26468A2C3125F900FB9C78 /* PhotoTableViewCell.swift */,
+				3C26468B2C3125F900FB9C78 /* PhotoTableViewCell.xib */,
+			);
+			path = TableCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +260,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C2646562C31248E00FB9C78 /* Assets.xcassets in Resources */,
+				3C2646862C3125B200FB9C78 /* PhotoCollectionViewCell.xib in Resources */,
+				3C26468C2C3125F900FB9C78 /* PhotoTableViewCell.xib in Resources */,
 				3C2646592C31248E00FB9C78 /* Base in Resources */,
 				3C2646542C31248C00FB9C78 /* Base in Resources */,
 			);
@@ -258,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C26468D2C3125F900FB9C78 /* PhotoTableViewCell.swift in Sources */,
 				3C2646512C31248C00FB9C78 /* ViewController.swift in Sources */,
+				3C2646872C3125B200FB9C78 /* PhotoCollectionViewCell.swift in Sources */,
 				3C26464D2C31248C00FB9C78 /* AppDelegate.swift in Sources */,
 				3C26464F2C31248C00FB9C78 /* SceneDelegate.swift in Sources */,
 			);
